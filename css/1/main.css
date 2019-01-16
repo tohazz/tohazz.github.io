@@ -1,0 +1,77 @@
+html {
+  font-size: 10px;
+}
+html li {
+  list-style: none;
+}
+.logo img {
+  margin-top: 1rem;
+  width: 10rem;
+  padding: 2%;
+  text-align: left;
+  z-index: 1;
+}
+main {
+  margin-top: 1rem;
+  width: 100%;
+  height: 75rem;
+  background-image: url(../images/head.jpg);
+}
+.header {
+  position: : relative;
+}
+.header-copiright {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  margin-top: 4.2rem;
+  background: #f2720c;
+  padding: 0.4rem 2rem 0.4rem 1rem;
+  border: 0.1rem solid #f2720c;
+  border-radius: 30rem;
+  z-index: 0;
+}
+.nav-menu-top {
+  margin-top: 2rem;
+}
+.nav-menu-top ul {
+  text-align: right;
+}
+.nav-menu-top li {
+  display: inline-block;
+}
+.nav-menu-top li a {
+  color: #fff;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  background: #f2720c;
+  text-decoration: none;
+  border: 0.1rem solid #f2720c;
+  border-radius: 30rem;
+}
+.nav-menu-left {
+  margin-top: 1.5rem;
+}
+.nav-menu-left li {
+  margin: 2rem 0;
+}
+.nav-menu-left li a {
+  color: #fff;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  background: #f2720c;
+  text-decoration: none;
+  border-radius: 30rem;
+}
+.header-social {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+.header-social img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.header-main {
+  text-align: center;
+  color: #f2720c;
+}

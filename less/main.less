@@ -1,0 +1,267 @@
+@color-nav-bg: #a8901e;
+@color-nav-bg-hover: radial-gradient( ellipse, #f2720c, #a8901e);
+@color-border: silver;
+@color-white: #eceaea;
+@color-header: #367bd9;
+@color-bg-content: #eaeaea;
+@color-bg-header: #555353;
+@color-social-bg: #7d7c7c;
+
+@shadow: -16px 11px 26px rgba(0,0,0,0.43);
+
+.borderShadow () {
+	border: 0.01rem solid #f2720c; 
+	box-shadow: 1px 1px 2px black, 0 0 1em #f2720c;
+}
+
+//border
+
+@border: 0.1rem solid @color-border;
+@border-radius: 5rem 30rem;
+
+//font-family
+
+@text-header-nav: 'Istok Web', sans-serif;
+@text-header: 'CyrillicOld', sanf-serif;
+@text-content: 'Open Sans Condensed', sans-serif;
+
+html {
+	font-size: 10px;
+}
+
+html li {
+	list-style: none;
+}
+
+//fonts
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web&subset=cyrillic');
+@font-face {
+    font-family: 'CyrillicOld';
+    src: url('../fonts/CyrillicOld.eot');
+    src: url('../fonts/CyrillicOld.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CyrillicOld.woff2') format('woff2'),
+        url('../fonts/CyrillicOld.woff') format('woff'),
+        url('../fonts/CyrillicOld.ttf') format('truetype'),
+        url('../fonts/CyrillicOld.svg#CyrillicOld') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// header
+
+/* .row {
+	border: 1px solid white;
+} */
+h1, h2 {
+	color: @color-header;
+	text-align: center;
+	font-family: @text-header;
+}
+
+h1 {	
+	position: relative;
+	margin-bottom: 1rem;	
+	font-size: 4rem;
+	text-shadow: @shadow;
+	&:hover {
+	font-size: 4.2rem;
+	}
+}
+
+//header-block
+
+.header {
+	font-family: @text-header-nav;
+	font-weight: 500;
+	font-size: 1.4rem;
+	position: relative;
+	background-image: url(../images/head.jpg);
+}
+
+.logo {
+	height: 10rem;
+	
+ img {
+ 	position: relative;
+ 	margin-top: 1rem;
+ 	width: 10rem;
+ 	padding: 2%;
+	text-align: left;
+	z-index: 1;
+	&:hover {
+	width: 10.2rem;
+		}
+	}
+}
+
+main {
+	margin-top: 1rem;
+	width: 100%;
+	height: 77rem;
+	background-color: @color-bg-header;
+}
+
+.bg-header-block{
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background-color: @color-bg-content;
+}
+.header-copiright {
+	position: relative;
+	color: @color-white;
+	margin-top: 4.2rem;
+	background: @color-nav-bg;
+	padding: 0.3rem 2rem 0.3rem 1rem;
+	border: @border;
+	border-radius: @border-radius;
+	box-shadow: @shadow;
+	z-index: 0;
+	span {
+		padding-left: 3rem;
+		}
+}
+
+//menu
+
+.nav-menu-top {
+	margin-top: 2rem;
+
+ul {
+	text-align: right;
+}
+li {
+	display: inline-block;
+}
+li a {
+	color: @color-white;
+	margin-left: 0.5rem;
+	padding: 0.4rem 2rem;
+	background: @color-nav-bg;
+	text-decoration: none;
+	border: @border;
+	border-radius: @border-radius;
+	box-shadow: @shadow;
+	}
+li a:hover {
+	background: @color-nav-bg-hover;
+	padding: 0.6rem 2rem;
+	}
+}
+ 
+.nav-menu-left {
+li {
+	margin: 1.5rem 0;
+}
+li a {
+	color: @color-white;
+	padding: 0.4rem 2rem;	
+	background: @color-nav-bg;
+	text-decoration: none;
+	border: @border;
+	border-radius: @border-radius;
+	box-shadow: @shadow;
+	}
+li a:hover {
+	background: @color-nav-bg-hover;
+	margin-left: 0.6rem;
+	padding: 0.6rem 2rem;
+	}
+}
+
+//social
+
+.header-social {
+	height: 18rem;
+	text-align: center;
+	padding-top: 1rem;
+	border: @border;
+	background-color: @color-social-bg;
+	box-shadow: @shadow;
+
+
+img {
+	width: 4rem;
+	height: 4rem;
+	padding: 0.3rem;
+	&:hover {
+		.borderShadow ()
+			}
+	}
+}
+
+.header-main {
+	height: 10rem;
+	a {
+	text-decoration: none;
+	}
+}
+
+//slider
+
+.fotorama {
+	padding-top: 5rem;
+}
+
+//content-block
+
+.content {
+	position: relative;
+	z-index: 1;
+	display: table;
+	width: 100%;
+	min-height: 100vh;
+	background-color: @color-bg-content;
+	border: 0.1rem solid @color-bg-content;
+	box-shadow: @shadow;
+	margin-top: 0.5rem;
+	margin-bottom: -1rem;
+	padding-top: 4rem;
+}
+
+//footer
+
+footer {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	height: 15rem;
+	background-color: @color-bg-header;
+	span {
+		display: inline-block;
+		float: left;
+		font-family: @text-content;
+		font-weight: 500;
+		color: @color-white;
+		padding: 2% 0 0 4%;		
+	}
+}
+
+.footer-social {
+	display: block;
+	margin-top: 2rem;
+	padding: 1% 2.2%;
+	background-color: @color-social-bg;
+	border: @border;
+	box-shadow: @shadow;
+
+img {
+	float: right;
+	display: block;
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0.3rem;
+	&:hover {
+		.borderShadow ()
+		}
+	}
+
+span {
+	text-align: center;
+	font-family: @text-header-nav;
+	font-size: 1.4rem;
+	padding: 0 0 1rem 1%;
+	}
+}
